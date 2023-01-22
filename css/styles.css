@@ -15,6 +15,17 @@
   --indent: 30px;
   --items: 3;
 }
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
 body {
   font-family: var(--font-primary);
   color: var(--color-secondary);
@@ -52,19 +63,20 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
+
 /*-----------------HEADER----------------- */
 .header {
   padding-top: 24px;
   width: 1440px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-wrapper {
   display: flex;
   align-items: center;
   margin: 0;
-
-  outline: 2px solid red;
 }
 .header-nav {
   display: flex;
@@ -81,7 +93,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-right: 76px;
-  margin-left: 156px;
 }
 .header-logo {
   color: var(--color-primary);
@@ -127,20 +138,26 @@ img {
 /*-----------------MAIN----------------- */
 .hero-section {
   background-color: var(--color-primary);
-  width: 1440px;
-  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 188px;
+  padding-bottom: 163px;
 }
 .hero-title {
+  text-align: center;
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.071;
   color: var(--color-light);
   letter-spacing: 0.02em;
-  padding: 188px 473px 49px 473px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
 }
 
 .hero-button {
+  display: flex;
   border-radius: 4px;
   border: none;
   background-color: var(--color-iris);
@@ -150,7 +167,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  margin: 0 635px 187px 636px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px 32px;
 }
 .hero-button:hover,
@@ -169,10 +187,15 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.advantages-section {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .advantages-list {
   display: flex;
-  padding-left: 156px;
   gap: var(--indent);
+  padding-left: 0;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -201,8 +224,7 @@ img {
   color: var(--color-primary);
   letter-spacing: 0.02em;
   margin-top: 0;
-  margin-left: 403px;
-  margin-bottom: 72px;
+  text-align: center;
 }
 .work-list {
   display: flex;
@@ -212,6 +234,8 @@ img {
 .team-section {
   background-color: var(--color-invert);
   width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-title {
   font-weight: 700;
@@ -251,6 +275,8 @@ img {
 .footer {
   background-color: var(--color-primary);
   width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-wrapper {
   padding: 100px 1020px 100px 156px;
